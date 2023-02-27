@@ -1,0 +1,149 @@
+/* @font-face { 
+    font-family: "MullerLight";
+    src: url("fonts/MullerLight.eot");
+    src: url("fonts/MullerLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MullerLight.woff") format("woff"),
+    url("fonts/MullerLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+:root{
+    
+} */
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.main-wrapper{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.img-wrapper{
+    position: relative;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px black;
+    margin-top: 20px;
+}
+.img-wrapper:hover img:last-child{
+    opacity: 0;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  }
+  
+  .effect {
+    position: fixed;
+    top: 0;
+    left: -15%;
+    animation: spin 25s infinite linear;
+    border-radius: 50%;
+    transform-origin: 50% 48%;
+    width: 800px;
+    height: 700px; 
+    background-image: linear-gradient(15deg, rgba(219,220,215,0.2) 0%, rgba(221,220,215,0.1) 24%, rgba(227,201,204,0.1) 30%, rgba(231,98,125,0.1) 46%, rgba(184,35,90,0.1) 59%, rgba(128,19,87,0.1) 71%, rgba(61,22,53,0.1) 84%, rgba(28,26,39,0.1) 100%);
+  /* Alternate color scheme:
+    background-image: linear-gradient(15deg, rgba(19, 84, 122, 0.2) 0%, rgba(128, 208, 199, 0.2) 100%);*/
+  }
+  
+  .effect:nth-child(2) {
+    left: -10%;
+    animation-duration: 5s;
+  }
+  
+  .effect:nth-child(3) {
+    left: -5%;
+    margin-top: 10px;
+    animation-duration: 7s;
+  }
+  
+  .effect:nth-child(4) {
+    left: 0%;
+    animation-duration: 9s;
+  }
+  
+  .effect:nth-child(5) {
+    left: 5%;
+    margin-top: 10px;
+    animation-duration: 11s;
+  }
+  
+  .effect:nth-child(6) {
+    left: 10%;
+    animation-duration: 12s;
+  }
+  
+  .effect:nth-child(7) {
+    left: 15%;
+    margin-top: 10px;
+    animation-duration: 13s;
+  }
+  
+  .effect:nth-child(8) {
+    left: 20%;
+    animation-duration: 5s;
+  }
+  
+  .effect:nth-child(9) {
+    left: 25%;
+    margin-top: 10px;
+    animation-duration: 7s;
+  }
+  
+  .effect:nth-child(10) {
+    left: 30%;
+    animation-duration: 9s;
+  }
+  
+  .effect:nth-child(11) {
+    left: 35%;
+    margin-top: 10px;
+    animation-duration: 11s;
+  }
+  
+  .effect:nth-child(12) {
+    left: 40%;
+    animation-duration: 12s;
+  }
+  
+  .effect:nth-child(13) {
+    left: 45%;
+    margin-top: 10px;
+    animation-duration: 13s;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
